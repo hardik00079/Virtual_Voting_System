@@ -1,0 +1,31 @@
+<br>
+<div class="card text-center mauve" id="card-container">
+    <div class="card-header">
+        <div *ngIf="!loggedIn">
+            <h2>Welcome to FDM's Virtual Voting System</h2>
+            <a class="btn form-button-color" routerLink="/login">Login</a>
+            <p>If you're not singed up yet</p>
+            <a class="btn form-button-color" routerLink="/register">Register</a>
+        </div>
+        <div *ngIf="loggedIn">
+            <h2>Welcome {{user.firstName}}</h2>
+            <div *ngIf="user.role=='owner'">
+            <app-owner-page></app-owner-page>
+            </div>
+            <div *ngIf="user.role=='admin'">
+                <app-admin-page></app-admin-page>
+            </div>
+            <div *ngIf="user.role=='voter'">
+               <app-voter-page></app-voter-page>
+              <!-- <app-polls-page></app-polls-page>-->
+            </div>
+            <div *ngIf="user.role=='guest'">
+                <app-guest-page></app-guest-page>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">An Online System With Your Needs At the Forefront</h5>
+      <p class="card-text">Modern, Safe, Secure</p>
+    </div>
+</div>

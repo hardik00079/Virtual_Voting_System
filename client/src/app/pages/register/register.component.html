@@ -1,0 +1,77 @@
+<!-- <div class="container">
+    <h1>Virtual Voting Registration</h1>
+
+    <form class="register-content" #registerForm = "ngForm" (ngSubmit)="register()">
+        <label for="first-name">First Name:</label>
+        <input type="text" [(ngModel)]="firstName" name="first-name" req><br>
+        <label for="last-name">Last Name:</label>
+        <input type="text" [(ngModel)]="lastName" name="last-name" req><br>
+        <label for="email">email:</label>
+        <input type="text" [(ngModel)]="email" name="email" #fdmEmailNgModel="ngModel" appFdmEmail req><br>
+        <p *ngIf="fdmEmailNgModel.errors?.['notFdmEmail']">Must be an FDM email</p>
+        <label for="username">Username:</label>
+        <input type="text" [(ngModel)]="username" name="username" req><br>
+        <label for="password">Password:</label>
+        <input type="password" [(ngModel)]="password" name="password" #passwordNgModel="ngModel" appPassword req><br>
+        <p *ngIf="passwordNgModel.errors?.['badPassword']">
+            Email must contain:
+                <br>at least 8 character
+                <br>one uppercase letter
+                <br>one lowercase letter
+                <br>one digit
+                <br>one special character(●!#$%&()*+,-./:;=?@[\]^_`|~])
+        </p>
+
+        <div *ngIf="!passwordNgModel.errors?.['badPassword'] && !fdmEmailNgModel.errors?.['notFdmEmail']">
+        <input class="btn-all" type="submit" value="Register">
+
+        </div>
+
+    </form>
+</div> -->
+
+<form class="mauve" style="width: 750px; margin-left: 330px;
+ margin-top: 30px; margin-bottom: 120px; padding-left: 10px; padding-right: 10px;padding-top: 10px; padding-bottom: 10px;" #registerForm = "ngForm" (ngSubmit)="register()">
+    <div class="mb-3">
+    <label class="form-label">Register</label>
+    </div>
+    <hr style="border-top: 3px solid white">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">First Name</label>
+        <input type="text" class="form-control" [(ngModel)]="firstName" name="first-name" req>
+    </div>
+    <hr >
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Last Name</label>
+        <input type="text" class="form-control" [(ngModel)]="lastName" name="last-name" req>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="text" class="form-control" [(ngModel)]="email" name="email" #fdmEmailNgModel="ngModel" appFdmEmail req>
+        <p *ngIf="fdmEmailNgModel.errors?.['notFdmEmail']">Must be an FDM email</p>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <input type="text" class="form-control" [(ngModel)]="username" name="username" req>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password" #passwordNgModel="ngModel" appPassword req>
+        <p *ngIf="passwordNgModel.errors?.['badPassword']">Password Should be strong</p>
+    </div>
+
+    <button type="submit" value="Register" class="btn form-button-color">Register</button>
+
+    <hr style="border-top: 3px solid white">
+    <!-- <hr> -->
+    <!-- <div class="mb-3">
+        <a href="#">Forgot your passord?</a>
+    </div>
+    <hr style="border-top: 3px solid white"> -->
+    <!-- <div class="mb-3">
+        <label class="form-label">
+            New User
+        </label>
+    </div>
+    <button type="button" class="btn form-button-color">Register</button> -->
+</form>

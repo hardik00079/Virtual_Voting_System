@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.poll-card {
+  border: solid black 2px;
+  border-radius: 5px;
+  margin: 20px;
+  width:350px;
+}
+
+.card-header {
+  text-align: center;
+  padding: 30px;
+  background-color: #242F9B;
+  color: white;
+  width:346px;
+  font-size: 1.5em;
+}
+
+.card-body {
+  text-align: center;
+  padding: 15px;
+}
+
+h3 {
+  margin: 0;
+}
+.form-button-color{
+  background-color: #242F9B;
+  color: white;
+}
+
+.slider {
+  /* line them up horizontally */
+  display: flex;
+
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+}

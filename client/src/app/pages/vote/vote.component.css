@@ -1,0 +1,68 @@
+table {
+  border-collapse: collapse;
+  text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+
+}
+
+th, td {
+  padding: 8px;
+  white-space:nowrap
+}
+
+tr:nth-child(even) {
+  background-color: #909cc2;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.poll-card {
+  border: solid black 2px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.card-header {
+  background: #f58a07;
+  padding: 30px;
+  color: #084887;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 1.5em;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.home-container{
+  width:100%;
+}
+
+.home-content{
+  text-align: center;
+  width: 70%;
+  display: block;
+
+}
+
+
+.home-container a:hover{
+  background: #3575ec;
+  cursor: pointer;
+}
+.home-content p {
+  padding: 25px;
+}
+h2 {
+  padding-bottom: 25px;
+}

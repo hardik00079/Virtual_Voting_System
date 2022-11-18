@@ -1,0 +1,14 @@
+<h2>Guest User</h2>
+<div class="container">
+    <div *ngFor="let poll of polls" class="card-container">
+      <div class="poll-card">
+        <div class="card-header">
+          <h3>{{poll.pollName}}</h3>
+        </div>
+        <div class="card-body">
+          <p>Category: {{poll.category}}</p>
+          <p>Publish Date: {{poll.publishDate}}</p>
+      </div>
+      </div>
+    </div>
+</div>

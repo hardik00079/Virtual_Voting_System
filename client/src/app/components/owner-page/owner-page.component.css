@@ -1,0 +1,37 @@
+table {
+  border-collapse: collapse;
+
+}
+
+th, td {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #909cc2;
+}
+
+.btn {
+  width: 30%;
+  margin: auto;
+  font-size: 1.25em;
+}
+
+.btn, button{
+  background-color: #242F9B;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding:10px;
+
+  text-decoration: none;
+}
+
+.btn:hover, button:hover{
+  background: #f9ab55;
+  cursor: pointer;
+}
+
+

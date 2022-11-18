@@ -1,0 +1,17 @@
+#login-form{
+  width: 750px;
+  height: 400px;
+  margin-left: 330px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #646FD4;
+  color: white;
+}
+.form-button-color{
+  background-color: #242F9B;
+  color: white;
+}

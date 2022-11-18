@@ -1,0 +1,19 @@
+<h2>Voter</h2>
+<div class="container">
+  <div class="slider" *ngFor="let poll of polls" class="card-container">
+    <div class="poll-card">
+      <div class="card-header">
+        <h3>{{poll.pollName}}</h3>
+      </div>
+        <div class="card-body">
+          <p>Category: {{poll.category}}</p>
+          <p>Publish1-Date: {{poll.publishDate}}</p>
+
+            <!--<a class="btn" routerLink="/vote-input">Vote Here</a> -->
+            <!--<button *ngIf="user.role=='voter'" routerLink="/vote">Vote Here</button>
+            <button *ngIf="user.role=='admin' || user.role=='owner'" routerLink="/addNominee">Add Nominee</button>-->
+            <a *ngIf="user.role=='voter'" class="btn form-button-color" routerLink="/view-poll" [queryParams]="{unit: poll.pollId}" >Vote</a>
+      </div>
+    </div>
+  </div>
+</div>

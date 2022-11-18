@@ -1,0 +1,39 @@
+h2 {
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+
+a:hover{
+  background: #f9ab55;
+  cursor: pointer;
+}
+
+.card-header{
+  text-align: center;
+  width: 100%;
+  display: block;
+
+}
+
+#card-container{
+  width:880px;
+  margin-left: 265px;
+  margin-bottom: 155px;
+  background: #646FD4;
+  color: white;
+
+
+}
+.home-content p {
+  padding: 25px;
+}
+.form-button-color{
+  background-color: #242F9B;
+  color: white;
+}
+#vote-image{
+  width: 998px;
+  height: 305px;
+  margin-left: 200px;
+}

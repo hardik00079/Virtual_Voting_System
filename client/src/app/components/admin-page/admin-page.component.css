@@ -1,0 +1,54 @@
+table {
+  border-collapse: collapse;
+  text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+
+}
+
+th, td {
+  padding: 8px;
+  white-space:nowrap
+}
+
+tr:nth-child(even) {
+  background-color: #909cc2;
+
+}
+.btn {
+  width: 30%;
+  margin: auto;
+  font-size: 1.25em;
+}
+
+.btn, button{
+  background-color: #242F9B;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding:10px;
+  text-decoration: none;
+}
+
+.btn:hover, button:hover{
+  background: #f9ab55;
+  cursor: pointer;
+}
+
+input{
+  width: 60%;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+  border:none;
+  background: #909cc2;
+}
+.form-button-color{
+  margin-top: 5px;
+  background-color: #242F9B;
+  color: white;
+}

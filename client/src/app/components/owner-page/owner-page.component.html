@@ -1,0 +1,31 @@
+<div class="voter-container">
+  <hr>
+  <h2>Current Users</h2>
+  <hr>
+  <div class="'card-container">
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Userame</th>
+        <th>Eamil</th>
+        <th>Role</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </tr>
+      <tr *ngFor="let user of users" >
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.role}}</td>
+        <td *ngIf="user.role=='voter' || user.role=='guest' || user.role=='admin'"  >
+          <button (click)="delete(user.userId, user.firstName, user.lastName)">Delete</button>
+        </td>
+        <td>
+          <button *ngIf="user.role=='voter' || user.role=='guest'" (click)="makeAdmin(user)">Make Admin</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+
+  <form class="mauve" style="width: 600px; height: 400px; text-align: center; justify-content: center ;
+ margin-top: 30px; margin-bottom: 120px; padding-left: 10px; padding-right: 10px;padding-top: 10px; padding-bottom: 10px;" #addPollForm = "ngForm" (ngSubmit)="addPoll()">
+    <div class="mb-3">
+    <label class="form-label" style="justify-content: center;"><h1>Create New Poll</h1></label>
+    </div>
+    <hr style="border-top: 3px solid white">
+    <div class="mb-3">
+      <label for="poll-name">Poll Name:</label>
+      <input type="text" [(ngModel)]="pollName" name="poll-name" req><br>
+    </div>
+    <hr >
+    <div class="mb-3">
+      <label for="category">Category:</label>
+      <input type="text" [(ngModel)]="category" name="category" req><br>
+
+    </div>
+    <hr >
+    <div class="mb-3">
+      <label for="publishDate">Start Date:</label>
+      <input type="date" [(ngModel)]="publishDate" name="publishDate" req><br>
+    </div>
+    <hr >
+    <button type="submit" class="btn form-button-color" value="Create Poll">Create Poll</button>
+
+</form>
+</div>

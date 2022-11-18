@@ -1,0 +1,18 @@
+<div class="container">
+  Choose your voting options:
+  <div>
+    <form [formGroup]="contactForm" (ngSubmit)="submit()">
+
+      <p>
+
+        <select formControlName="option">
+          <option [ngValue]="null" disabled>Select FDM Region</option>
+          <option *ngFor="let option of optionsVote" [ngValue]="option.id">{{option.name}}</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </p>
+
+      </form>
+  </div>
+</div>

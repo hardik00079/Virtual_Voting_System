@@ -1,0 +1,62 @@
+<!-- <header>
+  <h1><a routerLink="/">Virtual Voting System</a></h1>
+  <nav>
+    <a routerLink="/home">Home</a>
+    <div *ngIf="!loggedIn">
+      <a routerLink="/login">Login</a>
+      <a routerLink="/register">Register</a>
+    </div>
+    <div *ngIf="loggedIn">
+      <button (click)="logout()">Logout</button>
+    </div>
+  </nav>
+</header>
+</div> -->
+
+<!-- <div class="container-fluid text-center">
+  <hr>
+  <a routerLink="/">Virtual Voting System</a>
+  <hr>
+</div> -->
+
+<nav class="navbar nav-bar-background">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src={{fdmLogo}} alt={{logoAlt}} width="70" height="70" class="d-inline-block align-text-center">
+      <a routerLink="/">Virtual Voting System</a>
+    </a>
+    <div *ngIf="!loggedIn">
+      <ul class="nav justify-content-center">
+
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Polls</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/register">Register</a>
+          </li>
+      </ul>
+    </div>
+      <div *ngIf="loggedIn">
+        <ul class="nav justify-content-center">
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Polls</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" (click)="logout()">Logout</a>
+          </li>
+        </ul>
+      </div>
+
+  </div>
+</nav>

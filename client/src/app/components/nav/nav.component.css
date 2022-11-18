@@ -1,0 +1,31 @@
+ /* button:hover{
+  cursor: pointer;
+}
+
+button {
+  font-family:'Times New Roman', Times, serif;
+}
+
+nav {
+  float: right;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+a, nav button, .btn {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 15px;
+  font-weight: 500;
+}
+ */
+
+ .nav-bar-background{
+
+  background-color: #242F9B;
+  color: white;
+}

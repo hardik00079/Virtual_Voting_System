@@ -1,0 +1,24 @@
+<!--<p>view-poll works!</p>
+{{ product | json}}
+-->
+<div class = "container">
+ <div class="mb-3">
+       
+
+    <div class="poll-card">
+      <div class="card-header">
+        <h3>{{poll.pollName}}</h3>
+      </div>
+      <div class="card-body">
+        <p>Category: {{poll.category}}</p>
+        <p>Publish Date: {{poll.publishDate}}</p>
+
+        <!---<p><a class="btn" routerLink="/vote-input" > Vote</a>
+          <button (click)="delete(poll.pollId, poll.pollName, poll.category)">Delete</button>
+        </p>-->
+    </div>
+    </div>
+
+</div>
+</div>
+<app-add-poll-members></app-add-poll-members>

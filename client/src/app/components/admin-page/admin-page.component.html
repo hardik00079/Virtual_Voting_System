@@ -1,0 +1,90 @@
+<div class="voter-container">
+  <hr >
+  <form #searchForm = "ngForm" (ngSubmit)="search()">
+    <label for="search-input">Search by Username : &nbsp; </label>
+    <input type="text" [(ngModel)]="searchInput" name="search-input" req><br>
+    <input class="btn form-button-color" type="submit" value="Search">
+    <div *ngIf="searchResults">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Userame</th>
+          <th>Eamil</th>
+          <th>Role</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </tr>
+        <tr>
+          <td>{{searchResults.firstName}}</td>
+        <td>{{searchResults.lastName}}</td>
+        <td>{{searchResults.username}}</td>
+        <td>{{searchResults.email}}</td>
+        <td>{{searchResults.role}}</td>
+        <td>
+          <button (click)="delete(searchResults.userId, searchResults.firstName, searchResults.lastName)">Delete</button>
+        </td>
+        <td>
+          <button *ngIf="searchResults.role=='guest'" (click)="makeVoter(searchResults)">Make Voter</button>
+        </td>
+        </tr>
+      </table>
+    </div>
+  </form>
+  <hr >
+  <h2>Current Users</h2>
+  <div class="'card-container">
+  <hr>  
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Userame</th>
+        <th>Eamil</th>
+        <th>Role</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </tr>
+      <tr *ngFor="let user of users" >
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.role}}</td>
+        <td >
+          <button *ngIf="user.role=='voter' || user.role=='guest' " (click)="delete(user.userId, user.firstName, user.lastName)">Delete</button>
+        </td>
+        <td>
+          <button *ngIf="user.role=='guest'" (click)="makeVoter(user)">Make Voter</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr >
+  <h2>Current Polls</h2>
+  <hr>
+  <div class="'card-container">
+    <table>
+      <tr>
+        <th>Poll Name</th>
+        <th>Catagory</th>
+        <th>Publish Date</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </tr>
+      <tr *ngFor="let poll of polls" >
+        <td>{{poll.pollName}}</td>
+        <td>{{poll.category}}</td>
+        <td>{{poll.publishDate}}</td>
+        <td>
+          <button (click)="deletepoll(poll.pollId, poll.pollName, poll.category)">Delete</button>
+        </td>
+        <td>
+          <button routerLink="/view-poll" [queryParams]="{unit: poll.pollId}">View</button>
+        </td>
+      </tr>
+    </table>
+    
+  <a class="btn form-button-color" routerLink="/add_poll">Make a Poll</a>
+  </div>
+</div>

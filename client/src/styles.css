@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+/*
+body{
+    background: #7ba4ce;
+    color: #f7f5fb;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    display: inline;
+}
+
+
+
+.btn-all{
+    background: rgba(203,39,124,0.8);
+    color: white;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    border-radius: 3rem;
+}
+
+.btn-all:hover{
+    background: rgba(122,99,144,0.677);
+    cursor: pointer;
+}
+
+.home-content {
+    margin:0 auto;
+    padding-top: 40px;
+}
+
+table {
+    margin: auto;
+}
+
+.btn {
+    width: 30%;
+    margin: auto;
+    font-size: 1.25em;
+}
+
+.btn, button{
+    background:lightblue;
+    color: #084887;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    border-radius: 3rem;
+    text-decoration: none;
+    border: solid black 2px;
+}
+
+.btn:hover, button:hover{
+    background: lightblue;
+    cursor: pointer;
+}
+*/
+a {
+  color:white;
+}

@@ -1,0 +1,15 @@
+.voter-container {
+  width: 100%;
+}
+
+.voter-card{
+  width:80%;
+  border-radius:10px;
+  box-shadow: 1px 5px 14px 1px rgba(125,125,125,0.4);
+  padding:10px;
+  margin:auto;
+}
+
+img{
+  width:100%;
+};
